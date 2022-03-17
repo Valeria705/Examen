@@ -1,0 +1,36 @@
+package co.edu.cesde;
+import java.util.Scanner;
+public class Main {
+
+    public static void main(String[] args) {
+        int ham= 10000;
+        int perros= 8000;
+        int salchipapas=6000;
+        int chorizo=7000;
+        int valorTotal=30000;
+        int con =0;
+
+        Scanner sc = new Scanner(System.in);
+        //System.out.println("Ingrese el numero de personas que van a ordenar");
+        //int personas= Integer.parseInt(sc.nextLine());
+        //System.out.println("Ingrese el plato de comida que desea: Hamburguesa, Perro, Salchipapas, Chorizo");
+        //String plato= sc.nextLine();
+
+
+        //for (int i = 0; i <= personas; i++) {
+           // System.out.println("Ingrese el plato de comida que desea: Hamburguesa, Perro, Salchipapas, Chorizo");
+            //String plato= sc.nextLine();
+       // }
+
+        if (valorTotal>20000){
+            System.out.println( "Total a pagar "+ (valorTotal-(valorTotal*0.10)) + " Porque su compra es superior a 20.000 tiene derecho a un descuento del 10%");
+        }
+        System.out.println("Desea incluir propina?");
+        String propina= sc.nextLine();
+        if (propina.equals("si")){
+            System.out.println( "Total a pagar "+ (valorTotal+(valorTotal*0.10)) + " Porque la propina que usted acepto es el 10%");
+        }else{
+            System.out.println("Gracias por su compra"+ "el total de su compra es: "+(valorTotal));
+        }
+        
+        
